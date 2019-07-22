@@ -57,7 +57,7 @@ python embeddings_extraction.py  /home/sebastian/Documents/txtfolder/ /home/seba
 * Layers are expressed with negative index
 * The bert folder shall remain with its original name
 * max_seq_lenght's default value is 128, it has to be present anyway
-* batch_size is 8 as default
+* batch_size is 8 as default, needs to be present as well.
 
 
 

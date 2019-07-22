@@ -40,10 +40,16 @@ your_model_folder
 ````
 5. Execute `embeddings_extraction.py`, the input parameters need to be in the order shown below:
 
-```
+````
 python embeddings_extraction.py <input_folder> <output_folder> <layers> <bert_model_dir_> <max_sequence_length> <batch_size>
+````
+
+Example:
 
 ````
+python embeddings_extraction.py  /home/sebastian/Documents/txtfolder/ /home/sebastian/Documents/outputfolder/ -1,-2 /home/sebastian/Documents/BERT_Embeddings/uncased12/ 128 8
+````
+
 
 6. All extracted files are in JSON format. With one line per line of input containing the BERT activations from each Transformer layer specified in layers (-1 is the final hidden layer of the Transformer, etc.)
 
@@ -54,11 +60,6 @@ python embeddings_extraction.py <input_folder> <output_folder> <layers> <bert_mo
 * batch_size is 8 as default
 
 
-Example:
-
-````
-python embeddings_extraction.py  /home/sebastian/Documents/txtfolder/ /home/sebastian/Documents/outputfolder/ -1,-2 /home/sebastian/Documents/BERT_Embeddings/uncased12/ 128 8
-````
 
 
 

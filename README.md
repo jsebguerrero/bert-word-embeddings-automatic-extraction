@@ -45,6 +45,8 @@ python embeddings_extraction.py <input_folder> <output_folder> <layers> <bert_mo
 
 ````
 
+6. All extracted files are in JSON format. With one line per line of input containing the BERT activations from each Transformer layer specified in layers (-1 is the final hidden layer of the Transformer, etc.)
+
 # Notes:
 * Layers are expressed with negative index
 * The bert folder shall remain with its original name
